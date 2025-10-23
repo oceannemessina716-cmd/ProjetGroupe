@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carnet d'Adresses - Accueil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Carnet d'Adresses - Accueil</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body { background-color: #f0f0f0; color: #333; }
+header { background-color: #50a6f1; color: white; padding: 30px; text-align: center; }
+footer { background-color: #418dcf; color: white; padding: 10px; text-align: center; position: fixed; bottom:0; width:100%; }
+.btn-custom { width: 200px; margin: 10px; }
+</style>
 </head>
 <body>
-  <!-- Barre de navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Carnet d'Adresses</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="ajouter.html" class="nav-link">Ajouter</a></li>
-          <li class="nav-item"><a href="liste.html" class="nav-link">Liste</a></li>
-          <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header>
+    <h1>Carnet d'Adresses</h1>
+</header>
 
-  <!-- Contenu principal -->
-  <div class="container text-center mt-5">
-    <h1 class="display-5 text-primary">Bienvenue dans votre Carnet d'Adresses</h1>
-    <p class="lead mt-3">Ajoutez, modifiez et consultez vos contacts facilement.</p>
+<div class="container text-center mt-5">
+    <a href="liste.html" class="btn btn-dark btn-lg btn-custom">Liste de contacts</a>
+    <a href="ajouter.html" class="btn btn-secondary btn-lg btn-custom">Ajouter un contact</a>
+    <a href="apropos.html" class="btn btn-secondary btn-lg btn-custom">À propos</a>
+</div>
 
-    <!-- Boutons principaux -->
-    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-      <a href="ajouter.html" class="btn btn-success btn-lg">➕ Ajouter un contact</a>
-      <a href="liste.html" class="btn btn-primary btn-lg">📋 Liste des contacts</a>
-      <a href="apropos.html" class="btn btn-secondary btn-lg">ℹ️ À propos</a>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    Groupe 7 - Développement Web
+</footer>
 </body>
 </html>
