@@ -1,12 +1,11 @@
-
 // contacts.js - Gestion complète des contacts (ajout, suppression, affichage)
 
 // Initialisation avec quelques contacts par défaut
 if (!localStorage.getItem("contacts")) {
   const initialContacts = [
-    { nom: "Dupont", prenom: "Jean", email: "jean.dupont@email.com", telephone: "123456789" },
-    { nom: "Martin", prenom: "Alice", email: "alice.martin@email.com", telephone: "987654321" },
-    { nom: "Durand", prenom: "Paul", email: "paul.durand@email.com", telephone: "456789123" },
+    { nom: "Dupont", prenom: "Jean", email: "jean.dupont@email.com", telephone: "123456789", adresse: "Paris, France", dateNaissance: "1990-05-12", lieuNaissance: "Lyon" },
+    { nom: "Martin", prenom: "Alice", email: "alice.martin@email.com", telephone: "987654321", adresse: "Marseille, France", dateNaissance: "1992-08-24", lieuNaissance: "Bordeaux" },
+    { nom: "Durand", prenom: "Paul", email: "paul.durand@email.com", telephone: "456789123", adresse: "Toulouse, France", dateNaissance: "1988-02-10", lieuNaissance: "Nice" },
   ];
   localStorage.setItem("contacts", JSON.stringify(initialContacts));
 }
@@ -51,6 +50,9 @@ function displayContacts() {
       <h5>${c.prenom} ${c.nom}</h5>
       <p>Email : ${c.email}</p>
       <p>Téléphone : ${c.telephone}</p>
+      <p>Adresse : ${c.adresse || "Non renseignée"}</p>
+      <p>Date de naissance : ${c.dateNaissance || "Non renseignée"}</p>
+      <p>Lieu de naissance : ${c.lieuNaissance || "Non renseigné"}</p>
       <button class="btn btn-danger btn-sm" onclick="deleteContact(${i})">Supprimer</button>
     `;
 
@@ -66,13 +68,16 @@ function handleAddContact(event) {
   const prenom = document.getElementById("prenom").value.trim();
   const email = document.getElementById("email").value.trim();
   const telephone = document.getElementById("telephone").value.trim();
+  const adresse = document.getElementById("adresse")?.value.trim() || "";
+  const dateNaissance = document.getElementById("dateNaissance")?.value.trim() || "";
+  const lieuNaissance = document.getElementById("lieuNaissance")?.value.trim() || "";
 
   if (!nom || !prenom || !email || !telephone) {
-    alert("Veuillez remplir tous les champs !");
+    alert("Veuillez remplir tous les champs obligatoires !");
     return;
   }
 
-  const newContact = { nom, prenom, email, telephone };
+  const newContact = { nom, prenom, email, telephone, adresse, dateNaissance, lieuNaissance };
   addContact(newContact);
 
   alert("✅ Contact ajouté avec succès !");
