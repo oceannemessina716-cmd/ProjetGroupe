@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --success-gradient: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
@@ -165,3 +166,5 @@ h2::after {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
 }
+=======
+>>>>>>> origin/marie-france

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -63,8 +64,112 @@
       </a>
     </div>
   </div>
+<meta charset="UTF-8">
+<title>🗒️ Carnet d'Adresses - Accueil</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  body {
+    background: linear-gradient(135deg, #d9e9ff, #f2f8ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #003366;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: linear-gradient(90deg, #50a6f1, #418dcf);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .welcome-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #004080;
+    line-height: 1.6;
+  }
+
+  .btn-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .btn-custom {
+    width: 240px;
+    margin: 15px;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-list { background-color: #004a99; color: white; }
+  .btn-list:hover { background-color: #003366; }
+
+  .btn-add { background-color: #007bff; color: white; }
+  .btn-add:hover { background-color: #0062cc; }
+
+  .btn-about { background-color: #5a9bd8; color: white; }
+  .btn-about:hover { background-color: #4682b4; }
+
+  footer {
+    background-color: #418dcf;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🗒️ Carnet d'Adresses</h1>
+</header>
+
+<div class="welcome-message">
+  Bienvenue sur <strong>votre carnet d’adresses numérique</strong> du <b>Groupe 7</b> !  
+  Cette application a été conçue pour vous aider à gérer facilement vos contacts :  
+  ajoutez, consultez, ou mettez à jour vos informations en quelques clics,  
+  le tout dans une interface simple, rapide et élégante.  
+</div>
+
+<div class="btn-container">
+  <a href="liste.html" class="btn btn-custom btn-list">📋 Liste de contacts</a>
+  <a href="ajouter.html" class="btn btn-custom btn-add">➕ Ajouter un contact</a>
+  <a href="apropos.html" class="btn btn-custom btn-about">ℹ️ À propos</a>
+</div>
+
+<footer>
+  Groupe 7 - Développement Web | © 2025 Tous droits réservés
+</footer>
+
 </body>
 
 </html>
