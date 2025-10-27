@@ -1,0 +1,38 @@
+/* Fichier: components.css */
+/* Fichier: components.css */
+/* Bouton d'Action Principal (CTA) */
+/* Bouton d'Action Principal (CTA) */
+
+.cta-btn {
+    background-color: var(--color-blue-green);
+    border: none;
+    color: var(--color-dark-blue);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.cta-btn:hover {
+    background-color: #3cb89a; /* Vert plus foncé */
+    transform: scale(1.05);
+    color: white;
+}
+
+
+/* Bouton Secondaire (Détails) */
+.custom-btn-secondary {
+    border-color: var(--color-violet);
+    color: var(--color-violet);
+}
+.custom-btn-secondary:hover {
+    background-color: var(--color-violet);
+    color: white;
+}
+
+/* Cartes de Produits */
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+.product-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
